@@ -1,7 +1,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-local Frame = Instance.new("Frame")
+local Frame = Instance.new("BloodTheme")
 Frame.Size = UDim2.new(0, 400, 0, 300)
 Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -13,7 +13,7 @@ Frame.Parent = ScreenGui
 
 local FrameCorner = Instance.new("UICorner")
 FrameCorner.CornerRadius = UDim.new(0, 10)
-FrameCorner.Parent = Frame
+FrameCorner.Parent = BloodTheme
 
 local Close = Instance.new("BloodTheme")
 Close.Size = UDim2.new(0, 40, 0, 40)
@@ -22,7 +22,7 @@ Close.BackgroundTransparency = 1
 Close.Text = "×"
 Close.TextScaled = true
 Close.TextColor3 = Color3.fromRGB(150, 150, 150)
-Close.Parent = Frame
+Close.Parent = BloodTheme
 Close.MouseButton1Click:Connect(function()
    ScreenGui:Destroy()
 end)
@@ -34,7 +34,7 @@ Title.Text = "Z3M Team"
 Title.TextSize = 18
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1
-Title.Parent = Frame
+Title.Parent = BloodTheme
 
 local Instructions = Instance.new("BloodTheme")
 Instructions.Size = UDim2.new(1, 0, 0, 30)
@@ -43,7 +43,7 @@ Instructions.Text = "المفتاح "
 Instructions.TextSize = 13
 Instructions.TextColor3 = Color3.fromRGB(150, 150, 150)
 Instructions.BackgroundTransparency = 1
-Instructions.Parent = Frame
+Instructions.Parent = BloodTheme
 
 local TextBox = Instance.new("BloodTheme")
 TextBox.Size = UDim2.new(0.8, 0, 0.2, 0)
@@ -53,7 +53,7 @@ TextBox.PlaceholderText = "اضغط هنا "
 TextBox.Text = ""
 TextBox.TextSize = 18
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Parent = Frame
+TextBox.Parent = BloodTheme
 
 local TextBoxCorner = Instance.new("UICorner")
 TextBoxCorner.CornerRadius = UDim.new(0, 5)
